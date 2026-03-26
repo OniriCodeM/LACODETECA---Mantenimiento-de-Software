@@ -1,0 +1,170 @@
+/* Configuración de Alto Contraste para Accesibilidad Visual */
+
+/* Fondo principal - Uso de gris muy claro para reducir el deslumbramiento */
+body.dark {
+    background-color: #F8F9FA;
+    /* Gris más suave para reducir la fatiga visual */
+}
+
+/* Navegación */
+body.dark nav {
+    background-color: #ffffff;
+
+}
+
+body.dark nav h5 {
+    color: #000000;
+    /* Texto blanco sobre fondo oscuro para máximo contraste */
+    font-size: 1.2rem;
+    /* Tamaño de fuente aumentado */
+    font-weight: 600;
+    /* Peso de fuente más visible */
+}
+
+body.dark .dropdown-button {
+    background-color: #2563EB;
+    /* Azul accesible con ratio de contraste >4.5:1 */
+    color: #FFFFFF;
+
+    font-size: 1.1rem;
+    /* Texto más grande */
+}
+
+body.dark nav ul a {
+    color: #FFFFFF;
+    background-color: #1E3A8A;
+    /* Azul oscuro para contraste */
+    padding: 12px 16px;
+    margin: 4px 0;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+body.dark nav ul a:hover {
+    color: #FFFFFF;
+    background-color: #2563EB;
+    /* Azul más brillante para feedback visual */
+    text-decoration: underline;
+    /* Indicador adicional de hover */
+}
+
+body.dark section h2 {
+    color: #000000;
+}
+
+body.dark .card-text {
+    color: #000000;
+    font-weight: 400;
+}
+
+body.dark .activity-content p {
+    color: #000000;
+    font-weight: 400;
+}
+
+body.dark .activity-item:last-child:hover {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+/* Contenedor del catálogo */
+body.dark .catalog-container {
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #CBD5E1;
+    /* Borde más visible */
+    padding: 24px;
+}
+
+body.dark .sub h2 {
+    color: #1E3A8A;
+    /* Azul oscuro para contraste */
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 16px 0;
+}
+
+/* Tarjetas del producto */
+body.dark .product {
+    background-color: #F1F5F9;
+    /* Fondo suave para contraste */
+    color: #0F172A;
+    /* Texto casi negro para legibilidad */
+    border: 2px solid #CBD5E1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .product h2 {
+    color: #1E3A8A;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+body.dark .product p {
+    color: #334155;
+    /* Gris oscuro para mejor legibilidad */
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Botón "Leer más" con alto contraste */
+body.dark .leer-mas-btn {
+    background-color: #1D4ED8;
+    color: #FFFFFF;
+    border: 2px solid #1D4ED8;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+body.dark .leer-mas-btn:hover {
+    background-color: #FFFFFF;
+    color: #1D4ED8;
+    text-decoration: underline;
+}
+
+/* Herramientas */
+body.dark .herramientas {
+    background-color: #F8F9FA;
+    padding: 24px;
+}
+
+body.dark .herramientas .titulo {
+    color: #1E3A8A;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Tarjetas de herramientas */
+body.dark .card {
+    background-color: #FFFFFF;
+    color: #334155;
+    border: 2px solid #CBD5E1;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+body.dark .card-title {
+    color: #1E3A8A;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+body.dark .card-title a {
+    color: #2563EB;
+    text-decoration: underline;
+}
+
+body.dark .card-title a:hover {
+    color: #1D4ED8;
+    text-decoration: none;
+}
+
+body.dark .card-description {
+    color: #334155;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}

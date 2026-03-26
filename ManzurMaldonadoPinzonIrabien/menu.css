@@ -1,0 +1,376 @@
+/*navegacion*/
+nav h5 {
+    margin-left: 184px;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+header {
+
+    border-bottom: 1px solid #1F2937;
+
+}
+
+nav {
+    font-family: system-ui, -apple-system, sans-serif;
+    display: flex;
+    align-items: flex-start;
+    background-color: #111827;
+    margin: 16px;
+    align-items: center;
+    /* Centra verticalmente */
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #111827;
+    margin-right: 2px;
+    padding: 10px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+nav ul {
+    margin-left: 455px;
+}
+
+.svg-icon {
+    width: 32px;
+    height: 32px;
+    color: #22D3EE;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    transform: translateX(178px);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+}
+
+/*Boton cascada*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.dropdown-button {
+    background-color: #ffc107;
+    color: black;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.dropdown-button::after {
+    content: '▼';
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2f2748;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    background-color: #2f2748;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.show {
+    display: block;
+}
+
+/* Hover effect for the button */
+.dropdown-button:hover {
+    background-color: #e0a800;
+}
+
+/* Contenedor de la foto de perfil */
+#profilePicContainer {
+    display: inline-block; /* Alinea la imagen al lado del nombre */
+    width: 30px;           /* Ajusta el tamaño del contenedor */
+    height: 30px;          /* Ajusta el tamaño del contenedor */
+    margin-right: 10px;    /* Espacio entre la imagen y el nombre */
+    overflow: hidden;      /* Recorta la imagen si es más grande */
+}
+
+#profilePic {
+    width: 50px;  /* Ajusta el tamaño */
+    height: 50px;
+    border-radius: 50%;  /* Hace la imagen redonda */
+    object-fit: cover;   /* Asegura que la imagen se ajuste sin deformarse */
+}
+
+/* boton oscuro*/
+
+
+/* Footer */
+.footer {
+    background: #243455;
+    color: white;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.footer p,
+.footer a {
+    color: #9ca3af;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid #455263;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    color: #9ca3af;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+    nav ul {
+        margin-left: 200px;
+    }
+
+    nav h5 {
+        margin-left: 100px;
+    }
+
+    .svg-icon {
+        transform: translateX(100px);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    nav ul {
+        margin-left: 100px;
+    }
+
+    nav h5 {
+        margin-left: 50px;
+    }
+
+    .svg-icon {
+        transform: translateX(50px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    nav h5 {
+        margin-left: 0;
+        order: 2;
+    }
+
+    .svg-icon {
+        transform: none;
+        order: 1;
+    }
+
+    nav ul {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        order: 3;
+    }
+
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .dropdown {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .dropdown-content {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    .switch {
+        order: 4;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        margin: 8px;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    ul li {
+        padding: 0;
+    }
+
+    .dropdown-button {
+        width: 100%;
+        padding: 8px;
+    }
+}
+
+@media print {
+    /* Ajustar fuentes para mejor legibilidad */
+    body {
+        font-family: serif; /* Cambia a una fuente serif */
+        font-size: 12pt; /* Tamaño de texto estándar */
+        line-height: 1.5; /* Espaciado entre líneas */
+        background: white; /* Fondo blanco */
+        color: black; /* Texto negro */
+    }
+
+    /* Eliminar elementos no útiles para impresión */
+    button, input, textarea, select, .no-print {
+        display: none; /* Ocultar elementos interactivos */
+    }
+
+    nav, footer {
+        display: none; /* Ocultar la barra de navegación y pie de página */
+    }
+
+    /* Mostrar enlaces como texto para referencias */
+    a[href]:after {
+        content: " (" attr(href) ")"; /* Añade la URL al lado del enlace */
+    }
+
+    /* Controlar imágenes */
+    img {
+        max-width: 100%; /* Evitar que las imágenes se salgan de la página */
+        height: auto; /* Mantener proporciones */
+        filter: grayscale(100%); /* Blanco y negro para ahorrar tinta */
+        page-break-inside: avoid; /* Evitar cortes de imagen en saltos de página */
+    }
+
+    /* Evitar cortes en elementos importantes */
+    h1, h2, h3, p, table {
+        page-break-before: avoid; /* No permitir saltos antes del elemento */
+        page-break-after: avoid; /* No permitir saltos después del elemento */
+    }
+
+    /* Estilizar tablas */
+    table {
+        border-collapse: collapse; /* Compactar bordes */
+        width: 100%; /* Asegurar que ocupen todo el ancho disponible */
+    }
+
+    th, td {
+        border: 1px solid black; /* Bordes negros para tablas */
+        padding: 4px; /* Espaciado interno */
+    }
+
+    /* Márgenes más pequeños para maximizar el uso del espacio */
+    @page {
+        margin: 1cm; /* Ajustar márgenes de impresión */
+    }
+
+    /* Numeración de páginas */
+    body::after {
+        content: "Página " counter(page) " de " counter(pages);
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        font-size: 10pt;
+        color: black;
+    }
+
+    /* Mostrar secciones específicas para impresión */
+    .print-only {
+        display: block; /* Secciones visibles solo al imprimir */
+    }
+
+    .screen-only {
+        display: none; /* Ocultar contenido exclusivo de pantalla */
+    }
+}

@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: #150C15;
+    background-color: #111827;
+}
+
+article h5 {
+    color: rgb(0, 0, 0) !important;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    padding: 6rem 1rem 3rem;
+    background: linear-gradient(to right, #2563eb, #1d4ed8);
+    color: white;
+    text-align: center;
+}
+
+.hero-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+/* Main Content */
+.main-container {
+    max-width: 1280px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.article {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.article img {
+    width: 60%;
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+    display: block;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+.article h2 {
+    font-size: 1.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.article p {
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+}
+
+/* Related Articles */
+.related {
+    margin-top: 3rem;
+}
+
+.related h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card h4 {
+    margin-bottom: 0.5rem;
+}
+
+/* Sidebar */
+.sidebar {
+    position: sticky;
+    top: 6rem;
+}
+
+.sidebar-content {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.topic-link {
+    display: block;
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.topic-link:hover {
+    background: #2968e574;
+}
+
+.topic-link h4 {
+    font-weight: 600;
+}
+
+.topic-link p {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-top: 0.25rem;
+}
