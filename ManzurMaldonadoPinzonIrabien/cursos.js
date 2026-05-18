@@ -182,7 +182,7 @@ function openModal(courseId) {
             showToast('Debes iniciar sesión para inscribirte a un curso', 4000);
             return;
         }
-        showToast('¡Inscrito exitosamente al curso!', 5000);
+        showToast(`¡Inscrito exitosamente al curso: ${course.title}!`, 5000);
         closeModal(); // Cierra el modal después de mostrar el toast
     };
 }
